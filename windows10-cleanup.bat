@@ -108,7 +108,8 @@ PowerShell -Command "Get-AppxPackage *Microsoft.Messaging* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *Facebook* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *Twitter* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *Drawboard PDF* | Remove-AppxPackage"
-
+PowerShell -Command "Get-AppxPackage Microsoft.XboxApp | Remove-AppxPackage"
+PowerShell -Command "Get-AppXProvisionedPackage -Online |where DisplayName -eq "Microsoft.XboxApp" |Remove-AppxProvisionedPackage -Online"
 
 @rem NOW JUST SOME TWEAKS
 REM *** Show hidden files in Explorer ***
