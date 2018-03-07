@@ -1,4 +1,4 @@
-@rem *** Disable Some Service ***
+@rem *** Disable Some Services ***
 sc stop DiagTrack
 sc stop diagnosticshub.standardcollector.service
 sc stop dmwappushservice
